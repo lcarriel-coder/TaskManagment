@@ -1,0 +1,15 @@
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\bin\Debug\net6.0\Common.deps.json
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\bin\Debug\net6.0\Common.dll
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\bin\Debug\net6.0\Common.pdb
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\bin\Debug\net6.0\Domain.dll
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\bin\Debug\net6.0\Domain.pdb
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.csproj.CopyComplete
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.dll
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\refint\Common.dll
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\Common.pdb
+C:\Programacion\pruebas_entrevista\Satrack\Backend\Common\obj\Debug\net6.0\ref\Common.dll
