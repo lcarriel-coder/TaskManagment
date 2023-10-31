@@ -13,7 +13,7 @@ Al ejecutar el backend, se llenará automáticamente con información ficticia, 
 
 - Backend .NET Core con Entity Framework.
 - Base de datos SQL Server.
-- Frontend React, Redux, MaterialUI, Router.
+- Frontend React, Redux, MaterialUI, Router, Vite.
 - Datos ficticios precargados.
 - Swagger para documentación de la API.
 
