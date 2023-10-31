@@ -6,7 +6,7 @@ Esta es una aplicación de muestra que combina .NET Core, React, Entity Framewor
 Al ejecutar el backend, se llenará automáticamente con información ficticia, incluyendo un usuario y tres categorías que se consumirán en el frontend.
 
 ## Captura de pantalla
-![Captura de pantalla](screenshot.png)
+![Captura de pantalla]([screenshot.png](https://raw.githubusercontent.com/lcarriel-coder/TaskManagment/main/capturas/1.png))
 
 ## Características
 
