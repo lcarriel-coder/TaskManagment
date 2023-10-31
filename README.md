@@ -7,7 +7,8 @@ Al ejecutar el backend, se llenará automáticamente con información ficticia, 
 
 ## Captura de pantalla
 ![Captura de pantalla](https://raw.githubusercontent.com/lcarriel-coder/TaskManagment/main/capturas/1.png)
-
+![Captura de pantalla](https://raw.githubusercontent.com/lcarriel-coder/TaskManagment/main/capturas/2.png)
+![Captura de pantalla](https://raw.githubusercontent.com/lcarriel-coder/TaskManagment/main/capturas/3.png)
 ## Características
 
 - Backend .NET Core con Entity Framework.
