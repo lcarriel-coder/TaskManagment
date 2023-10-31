@@ -26,6 +26,7 @@ Siga estos pasos para ejecutar la aplicación en su entorno local:
 - Navega al directorio del proyecto React: cd _App-task.
 - Instala las dependencias con npm instal.
 - Ejecuta el frontend con "npm run dev"
+- Crear la base de datos Sql server "dbPrueba2", colocar sus credenciales en el ConnectionStrings del archivo appsettings.js. Al ejecutar el backend se creara las tablas del proyecto con datos.
 
 
-   Capturas de la aplicacion
+   
