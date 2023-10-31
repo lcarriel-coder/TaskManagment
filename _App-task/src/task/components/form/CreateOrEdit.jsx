@@ -13,9 +13,12 @@ import {
 import { useTaskStore } from "../../../hooks";
 import { format } from 'date-fns';
 
+
+
+
 export const CreateOrEdit = ({closeDateModal }) => {
 
-    const { startSavingTask } = useTaskStore();
+    const { startSavingTask ,categories } = useTaskStore();
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const { activeTask } = useTaskStore();
@@ -45,7 +48,7 @@ export const CreateOrEdit = ({closeDateModal }) => {
         event.preventDefault();
         setFormSubmitted(true);
     
-        await startSavingTask(formValues);
+        await startSavingTask({...formValues, categoryName: categories?.find(e=>e.categoryId === formValues.categoryId)?.name});
         closeDateModal();
         setFormSubmitted(false);
       };
@@ -110,10 +113,10 @@ export const CreateOrEdit = ({closeDateModal }) => {
             label="Categoría"
             onChange={onInputChanged}
           >
-            
-            <MenuItem value="51f4776f-b23b-41f4-bab4-12e2a584e3bc">Personal</MenuItem>
-            <MenuItem value="41f9389e-5521-46ee-a142-669df7e7f1a7">Familia</MenuItem>
-            <MenuItem value="e83a4baf-e0db-48e7-a62e-8059572cf427">Trabajo</MenuItem>
+              {categories?.map((category ) => {
+                 return <MenuItem value={category?.categoryId}>{category?.name}</MenuItem>
+              })}
+ 
           </Select>
         </FormControl>
       </Grid>

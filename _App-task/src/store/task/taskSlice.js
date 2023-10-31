@@ -2,11 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialState = {
+    userId:'9411b400-11c1-4c6b-82a3-a73dd8347b63',
     isLoadingTask: true,
     tasks: [],
     activeTask: null,
     pageSize: 30,
     totalRecords:0,
+    categories:[]
    
 }
 export const taskSlice = createSlice({
@@ -30,7 +32,7 @@ export const taskSlice = createSlice({
             });
         },
         onDeleteTask: (state, { payload }) => {
-            console.log(payload,state.tasks);
+           
             // if (state.activeTask) {
                 state.tasks = state.tasks.filter(task => task.taskId !== payload?.taskId);
                 //state.activeEvent = null;
@@ -49,6 +51,11 @@ export const taskSlice = createSlice({
         onLoading: (state, { payload }) => {
             state.isLoadingTask = true;
         },
+
+        onSetCategories: (state, { payload }) => {
+            state.categories = payload;
+        },
+
        
         
       
@@ -57,4 +64,4 @@ export const taskSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { onSetActiveTask, onAddNewTask,onUpdateTask ,onDeleteTask,onLoadingTasks,onSetPage,onLoading,onSetFilter } = taskSlice.actions;
+export const { onSetActiveTask, onAddNewTask,onUpdateTask ,onDeleteTask,onLoadingTasks,onSetPage,onLoading,onSetFilter, onSetCategories } = taskSlice.actions;

@@ -3,7 +3,7 @@ import { useTaskStore } from "../../../hooks";
 
 export const AddNew = ({openDateModal}) => {
 
-  const { setActiveTask } = useTaskStore();
+  const { setActiveTask ,userId} = useTaskStore();
 
   const handleClickNew = () => {
     setActiveTask({
@@ -11,7 +11,7 @@ export const AddNew = ({openDateModal}) => {
       description: "",
       deadlineToFinish: "",
       isCompleted: false,
-      userId: "9411b400-11c1-4c6b-82a3-a73dd8347b63",
+      userId,
       categoryId: "",
     });
     openDateModal();

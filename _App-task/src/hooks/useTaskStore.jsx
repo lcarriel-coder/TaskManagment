@@ -11,13 +11,13 @@ import {
   onLoading,
 
 } from "../store";
-import { useEffect } from "react";
+
 
 export const useTaskStore = () => {
 
   const dispatch = useDispatch();
 
-  const { tasks, activeTask ,isLoadingTask , totalRecords ,pageSize} = useSelector((state) => state.task);
+  const { tasks, activeTask ,isLoadingTask , totalRecords ,pageSize,userId,categories} = useSelector((state) => state.task);
 
   const setActiveTask = (task) => {
     dispatch(onSetActiveTask(task));
@@ -40,7 +40,7 @@ export const useTaskStore = () => {
       // Creando
       const { data } = await taskApi.post("/task/create", task);
 
-      dispatch(onAddNewTask({ ...task, taskId: data, task }));
+      dispatch(onAddNewTask({ ...task, taskId: data, categoryName:task?.categoryName , task }));
     } catch (error) {
       console.log(error);
       Swal.fire("Error al guardar", error.response.data?.msg, "error");
@@ -69,7 +69,7 @@ export const useTaskStore = () => {
 
     try {
       const queryParams = {
-        UserId: obj?.UserId,
+        UserId: userId,
         Filter: obj?.Filter || '',
         PageNumber: obj?.PageNumber + 1,
         PageSize: pageSize,
@@ -104,8 +104,8 @@ export const useTaskStore = () => {
     hasTaskSelected: !!activeTask,
     totalRecords,
     pageSize,
-
-    
+    userId,
+    categories,
     //* Métodos
     startDeletingTask,
     setActiveTask,
