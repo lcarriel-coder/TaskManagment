@@ -20,13 +20,11 @@ Al ejecutar el backend, se llenará automáticamente con información ficticia, 
 
 Siga estos pasos para ejecutar la aplicación en su entorno local:
 
-1. Clona el repositorio:
-2.-Ejecuta el backend
-3.-Navega al directorio del proyecto React: cd frontend/_App-task
-4.-Instala las dependencias con npm install
-5.-Ejecuta el frontend
-6.-npm run dev
-
+- Clona el repositorio.
+- Ejecuta el backend.
+- Navega al directorio del proyecto React: cd frontend/_App-task.
+- Instala las dependencias con npm instal.
+- Ejecuta el frontend con "npm run dev"
 
 
    Capturas de la aplicacion
